@@ -8,14 +8,15 @@ export default {
 
 <template>
   <div>
-    <h1>All Songs</h1>
+    <h1>All songs</h1>
     <div v-for="song in songs" v-bind:key="song.id">
-      <h2>{{ song.title }}</h2>
-      <h2>{{ song.artist }}</h2>
-      <!-- <body>
-        {{ song.album }}
-        {{ song.url }}
-      </body> -->
+      <h2>{{ song.name }}</h2>
+      <img v-bind:src="song.url" />
+      <p>URL: {{ song.url }}</p>
+      <p>Title: {{ song.title }}</p>
+      <p>Artist: {{ song.artist }}</p>
+      <p>Album: {{ song.Album }}</p>
+      <button v-on:click="$emit('showSong', song)">More info</button>
     </div>
   </div>
 </template>
