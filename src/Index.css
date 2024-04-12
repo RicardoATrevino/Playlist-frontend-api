@@ -1,3 +1,69 @@
-html {
-  scroll-behavior: smooth;
+/* App.vue */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.songs {
+  list-style: none;
+  padding: 0;
+  color: #0056b3;
+}
+
+.song-item {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.song-title {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.song-artist {
+  font-size: 1rem;
+  color: #666;
+}
+
+.song-duration {
+  font-size: 1rem;
+  color: #666;
+}
+
+.add-song-form {
+  margin-top: 20px;
+}
+
+.add-song-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.add-song-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-song-button:hover {
+  background-color: #0056b3;
 }

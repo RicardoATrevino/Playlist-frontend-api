@@ -4,6 +4,7 @@ import SongsIndex from "./SongsIndex.vue";
 import SongsNew from "./SongsNew.vue";
 import SongsShow from "./SongsShow.vue";
 import Modal from "./Modal.vue";
+import "../style.css";
 
 export default {
   components: {
