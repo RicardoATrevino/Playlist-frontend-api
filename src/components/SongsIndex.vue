@@ -10,10 +10,12 @@ export default {
   <div>
     <h1>All Songs</h1>
     <div v-for="song in songs" v-bind:key="song.id">
-      <h2>{{ song.name }}</h2>
-      <img v-bind:src="song.url" />
-      <p>Width: {{ song.width }}</p>
-      <p>Height: {{ song.height }}</p>
+      <h2>{{ song.title }}</h2>
+      <h2>{{ song.artist }}</h2>
+      <!-- <body>
+        {{ song.album }}
+        {{ song.url }}
+      </body> -->
     </div>
   </div>
 </template>
